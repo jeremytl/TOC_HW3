@@ -22,7 +22,7 @@ public class TocHw3 {
 	public static void main(String[] args) throws IOException, JSONException {
 
 		try {
-
+			
 			BufferedReader readjson = new BufferedReader(new InputStreamReader(
 					new URL(args[0]).openStream(), "UTF-8"));
 			StringBuilder jsontext = new StringBuilder();
@@ -64,7 +64,7 @@ public class TocHw3 {
 				System.out.println("No data matches " + args[1] + args[2]
 						+ " and trade at/after " + args[3]);
 			}
-		} catch (IOException e) {
+		} catch (Exception e) {
 			
 				System.out.println("Too few arguments or error argument format!");
 				e.printStackTrace();

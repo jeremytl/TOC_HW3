@@ -57,11 +57,11 @@ public class TocHw3 {
 		JSONObject aline = realpricejson.getJSONObject(0);
 		for (i = 0; i < realpricejson.length(); i++) {
 			aline = realpricejson.getJSONObject(i);
-			matchery = aline.getInt("總價元");
+			matchery = aline.getInt("交易年月");
 			if (sectionp.matcher(aline.getString("鄉鎮市區")).find()
 					&& locationp.matcher(aline.getString("土地區段位置或建物區門牌"))
 							.find() && matchery > earliesty) {
-				avg_price += aline.getInt("交易年月");
+				avg_price += aline.getInt("總價元");
 				cnt++;
 			}
 		}

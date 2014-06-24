@@ -22,7 +22,8 @@ public class TocHw3 {
 	public static void main(String[] args) throws IOException, JSONException {
 
 		try {
-			
+			if(args.length<4)
+				throw new Exception();
 			BufferedReader readjson = new BufferedReader(new InputStreamReader(
 					new URL(args[0]).openStream(), "UTF-8"));
 			StringBuilder jsontext = new StringBuilder();

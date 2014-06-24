@@ -1,5 +1,5 @@
 /**
- * @author ³¯½n®m Wei-Jun Chen
+ * @author é™³ç·¯å³» Wei-Jun Chen
  * student number : F74006129
  * description:
  * 		Parse the .json data from the URL(args[0]),
@@ -57,11 +57,11 @@ public class TocHW3 {
 		JSONObject aline = realpricejson.getJSONObject(0);
 		for (i = 0; i < realpricejson.length(); i++) {
 			aline = realpricejson.getJSONObject(i);
-			matchery = aline.getInt("¥æ©ö¦~¤ë");
-			if (sectionp.matcher(aline.getString("¶mÂí¥«°Ï")).find()
-					&& locationp.matcher(aline.getString("¤g¦a°Ï¬q¦ì¸m©Î«Øª«°ÏªùµP"))
+			matchery = aline.getInt("ç¸½åƒ¹å…ƒ");
+			if (sectionp.matcher(aline.getString("é„‰éŽ®å¸‚å€")).find()
+					&& locationp.matcher(aline.getString("åœŸåœ°å€æ®µä½ç½®æˆ–å»ºç‰©å€é–€ç‰Œ"))
 							.find() && matchery > earliesty) {
-				avg_price += aline.getInt("Á`»ù¤¸");
+				avg_price += aline.getInt("äº¤æ˜“å¹´æœˆ");
 				cnt++;
 			}
 		}

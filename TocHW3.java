@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 
 import org.json.*;
 
-public class TocHW3 {
+public class TocHw3 {
 
 	/**
 	 * @param args
